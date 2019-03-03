@@ -35,6 +35,16 @@ td {
 
 }
 
+#signup {
+    position: relative;
+    top: 8px
+}
+
+#signin {
+    position: relative;
+    top: 8px
+}
+
 
 #formDiv {
     background: white;
@@ -51,7 +61,16 @@ td {
     width: 200px;
 }
 
+#logIn {
+    position: relative;
+    top: 30px;
+}
 
+#logSignUp {
+    position: relative;
+    top: 40px;
+    color: rgb(2, 50, 76);
+}
 
 #longURL {
     position: relative;
@@ -64,27 +83,50 @@ td {
     cursor: pointer;
 }
 
+.txtColor {
+    color: rgb(2, 50, 76);
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.labelStyles {
+    color: rgb(2, 50, 76);
+    position: relative;
+    right: -12px;
+    /* font-weight: bold; */
+    font-size: 18px;
+}
+
+.inputdivs {
+    width: 340px;
+    height: 45px;
+    color: rgb(2, 50, 76);
+    border: 1.5px solid rgb(121, 147, 160);
+}
 
 .coloredBtn {
     background: rgb(238, 64, 53);
     color: white;
+    width: 340px;
 }
 
 .noColorBtn {
     background: white;
-    color: darkblue
+    color: rgb(2, 50, 76);
+    width: 340px;
 }
 
 .btmButton {
     position: relative;
-    bottom: -50px;
+    bottom: -20px;
     font-size: 1rem;
-
+    color: rgb(2, 50, 76);
+    font-weight: 1
 }
 
 .topButton {
     position: relative;
-    bottom: -50px;
+    bottom: -30px;
     font-size: 1rem;
 }
 
@@ -96,7 +138,8 @@ td {
     width: 400px;
     margin: auto;
     background: white;
-    border: 1.5px solid grey;
+    color: rgb(2, 50, 76);
+    border: 1.5px solid rgb(121, 147, 160);
     border-radius: 5px;
     position: relative;
     top: 90px;
@@ -108,6 +151,8 @@ td {
     margin: auto;
     background: white;
     border: 1.5px solid grey;
+    color: rgb(2, 50, 76);
+    border: 1.5px solid rgb(121, 147, 160);
     border-radius: 5px;
     position: relative;
     top: 110px;
