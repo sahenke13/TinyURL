@@ -1,7 +1,5 @@
 auth.onAuthStateChanged(user => {
   if (user) {
-    console.log("current user is: ", user.email);
-
     $.ajax("/m/user/" + user.email, {
       type: "GET"
     }).then(data => {
@@ -23,7 +21,6 @@ auth.onAuthStateChanged(user => {
         tableRow.append(tinyURLData);
         tableRow.append(countData);
         $("#dynamicTable").append(tableRow);
-        console.log(data[i]);
       }
     });
   }

@@ -58,18 +58,11 @@ app.get("/shortUrl", (req, res) => {
 app.get("/m/user/:id", (req, res) => {
   console.log("route is being hit");
   let user = req.params.id;
-  console.log(user);
-  let data;
-  shortURLdb.find({ user: req.params.id }).then(data => {
+
+  shortURLdb.find({ user: user }).then(data => {
     console.log("here are all your shortURLS: ", data);
     res.json(data);
   });
-});
-//route to get all users and to see if they already exist.
-app.get("/m/user", (req, res) => {
-  //grab users and compare to user by email being created in main.js
-
-  userdb.find().then(data => res.json(data));
 });
 
 //route to get all shortURLs
