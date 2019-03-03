@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+    <title>Make Urls Tiny Again</title>
+</head>
+<link rel="stylesheet" type="text/css" media="screen" href="../css/style.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="../js/shortUrl.js"></script>
+<script src="../js/main.js"></script>
+
+<body>
+
+    <header>
+
+    </header>
+
+
+
+
+    <main>
+        <div class=" urlAndlogOut align-middle">
+
+            <h1 class="float-left">URLs </h1>
+            <div class="float-right align-middle" id="logout">Sign Out</div>
+        </div>
+
+        <div class="my-3 p-4 border border-secondary rounded" id="formDiv">
+            <form novalidate>
+                <div class="form-group">
+                    <span>
+                        <input type="url" class="form-control border border-dark my-2" pattern="https://.*" placeholder="Enter Long URL"
+                            name="longURL" id="longURL" required>
+                    </span>
+                </div>
+                <button type="button" class="btn btn-lg my-2" id="submit">Create URL</button>
+            </form>
+        </div>
+        <div class="mainTableContainer tableContainer">
+            <table id="dynamicTable">
+                <thead>
+                    <tr>
+                        <th>Original URL</th>
+                        <th>Tiny URL</th>
+                        <th>Hit Count</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+
+
+
+
+
+    </main>
+    <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyBfzQtXnIhxyORGjPxxOsGM3BFBWWQ3spU",
+            authDomain: "tinyurl-c454c.firebaseapp.com",
+            databaseURL: "https://tinyurl-c454c.firebaseio.com",
+            projectId: "tinyurl-c454c",
+            storageBucket: "tinyurl-c454c.appspot.com",
+            messagingSenderId: "203679848267"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

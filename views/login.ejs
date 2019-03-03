@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../js/main.js"></script>
+    <title>Make Urls Tiny Again</title>
+
+</head>
+
+<body>
+    <main>
+
+        <div class="container" id="mainContainer">
+            <p class="text-center textSignIn">You need to sign in or sign up before continuing.</p>
+            <div class="signInContainer">
+                <div class="container">
+                    <h1 class="text-center my-4">Sign In</h1>
+                    <form>
+                        <label for="email" class="align-right">Email</label>
+                        <input type="email" class="form-control border border-dark mb-3" placeholder="Enter your email"
+                            name="logInUser " id="logInUser" required>
+                        <label for="Password" class="align-right">Password</span></label>
+                        <input type="text" class="form-control border border-dark " placeholder="Enter your password"
+                            name="password" id="logInPassword" required>
+                        <button type="button" id="logIn" class="btn btn-lg btn-block mt-4 mb-3 coloredBtn">Sign In</button>
+
+                    </form>
+                    <a href="/" class="btn btn-lg btn-block my-3 noColorBt btmButton">Sign Up</a>
+
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+    <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyBfzQtXnIhxyORGjPxxOsGM3BFBWWQ3spU",
+            authDomain: "tinyurl-c454c.firebaseapp.com",
+            databaseURL: "https://tinyurl-c454c.firebaseio.com",
+            projectId: "tinyurl-c454c",
+            storageBucket: "tinyurl-c454c.appspot.com",
+            messagingSenderId: "203679848267"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

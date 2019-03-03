@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box
+}
+
+body {
+    font-family: arial;
+    margin: 0;
+    background: whitesmoke
+}
+
+main,
+header {
+    max-width: 1080px;
+    margin: 30px auto;
+    padding: 0 10px;
+    color: #333;
+}
+
+a {
+    color: inherit
+}
+
+table {
+    /* border-collapse: collapse; */
+    width: 100%;
+
+    border-radius: 30px
+}
+
+th,
+td {
+    border: .25px solid black;
+    border-radius: 5px;
+    padding: 15px;
+
+}
+
+
+#formDiv {
+    background: white;
+    position: relative;
+    top: 120px;
+    height: 175px;
+}
+
+#submit {
+    background: rgb(238, 64, 53);
+    color: white;
+    position: relative;
+    top: -20px;
+    width: 200px;
+}
+
+
+
+#longURL {
+    position: relative;
+    top: -25px
+}
+
+#logout {
+    position: relative;
+    top: 30px;
+    cursor: pointer;
+}
+
+
+.coloredBtn {
+    background: rgb(238, 64, 53);
+    color: white;
+}
+
+.noColorBtn {
+    background: white;
+    color: darkblue
+}
+
+.btmButton {
+    position: relative;
+    bottom: -50px;
+    font-size: 1rem;
+
+}
+
+.topButton {
+    position: relative;
+    bottom: -50px;
+    font-size: 1rem;
+}
+
+.tinyFont {
+    font-size: 12px;
+}
+
+.signInContainer {
+    width: 400px;
+    margin: auto;
+    background: white;
+    border: 1.5px solid grey;
+    border-radius: 5px;
+    position: relative;
+    top: 90px;
+    height: 450px
+}
+
+.signUpContainer {
+    width: 400px;
+    margin: auto;
+    background: white;
+    border: 1.5px solid grey;
+    border-radius: 5px;
+    position: relative;
+    top: 110px;
+    height: 550px
+}
+
+.textSignIn {
+    position: relative;
+    top: 80px;
+}
+
+
+.tableContainer {
+    overflow: hidden;
+    background: white;
+    position: relative;
+    top: 140px;
+    border: 1px solid black;
+    border-radius: 5px;
+
+}
+
+.mainTableContainer {
+    margin: 0;
+    padding: 0;
+}
+
+.urlAndlogOut {
+    position: relative;
+    top: 55px;
+}
