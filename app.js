@@ -5,8 +5,6 @@ const shortid = require("shortid");
 
 //bring in shortURL db and User db and possible current User db
 const shortURLdb = require("./models/shortUrl");
-const userdb = require("./models/user");
-const curUserdb = require("./models/curUser");
 
 const PORT = process.env.port || 3000;
 
@@ -55,38 +53,7 @@ app.get("/shortUrl", (req, res) => {
   res.render("shortUrl");
 });
 
-app.post("/m/user", (req, res) => {
-  console.log("creating a user here :", req.body);
-  let email = req.body.email;
-  let password = req.body.password;
-  let userObj = { email: email, password: password };
-  userdb.create(userObj).then(data => {
-    console.log(data);
-  });
-});
-
-//create a post route to set curUser
-app.post("/m/curUser", (req, res) => {
-  console.log("the curUser route got hit");
-  console.log("req.body: ", req.body.curUser);
-  curUserdb.create({ currentUser: req.body.curUser }).then(() => {
-    console.log("current user created");
-  });
-});
-//route to get current User.
-app.get("/m/curUser/", (req, res) => {
-  console.log("CurUser GET route hit");
-
-  curUserdb.find().then(data => res.json(data));
-});
-
 // route to delete current user
-
-app.delete("/m/curUser/", (req, res) => {
-  console.log("delete user has been clicked");
-  curUserdb.deleteMany().then(data => console.log("delete data: ", data));
-});
-//data route to get short URLs by user
 
 app.get("/m/user/:id", (req, res) => {
   console.log("route is being hit");
