@@ -28,7 +28,7 @@ table {
   border-radius: 30px;
   border-style: hidden;
   position: relative;
-
+  table-layout: fixed;
   right: 5px;
 }
 input {
@@ -40,6 +40,7 @@ input {
 th {
   font-size: 15pt;
   padding-left: 25px;
+  white-space: nowrap;
 }
 td {
   padding: 15px 0px 15px 25px;
