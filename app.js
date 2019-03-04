@@ -92,7 +92,7 @@ app.get("/m/:id", (req, res) => {
         )
         .then(data => console.log("findOneAndUpdate: ", data));
 
-      res.redirect(data[0].longURL);
+      // res.redirect(data[0].longURL);
     });
 });
 

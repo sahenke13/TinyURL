@@ -5,7 +5,7 @@
 body {
   font-family: arial;
   margin: 0;
-  background: whitesmoke;
+  background: rgb(242, 242, 242);
 }
 
 main,
@@ -20,25 +20,24 @@ a {
   color: inherit;
 }
 
+/* Table Styling */
 table {
-  /* border-collapse: collapse; */
-  width: 1095px;
-
+  width: 1090px;
   font-weight: bold;
   border-radius: 30px;
   border-style: hidden;
   position: relative;
-  right: 14px;
+  right: 12px;
+  padding-right: 10px;
 }
 
 th {
   font-size: 15pt;
-  padding-left: 20px;
-  padding-right: 10px;
+  padding: 11px 10px 11px 10px;
   white-space: nowrap;
 }
 td {
-  padding: 15px 10px 15px 25px;
+  padding: 5px 10px 5px 25px;
   overflow: hidden;
 }
 /* th */
@@ -48,6 +47,18 @@ td {
   border-radius: 5px;
 
   color: rgb(2, 50, 76);
+}
+
+.td-1 {
+  padding-left: 30px;
+  padding-right: 0px;
+}
+.td-2 {
+  padding-left: 20px;
+}
+.td-3 {
+  padding-right: 15px;
+  padding-left: 20px;
 }
 
 input {
@@ -127,6 +138,10 @@ input {
   font-weight: bold;
 }
 
+.textSignIn {
+  position: relative;
+  top: 80px;
+}
 .labelStyles {
   color: rgb(2, 50, 76);
   position: relative;
@@ -205,11 +220,6 @@ input {
   position: relative;
   top: 110px;
   height: 550px;
-}
-
-.textSignIn {
-  position: relative;
-  top: 80px;
 }
 
 .tableContainer {

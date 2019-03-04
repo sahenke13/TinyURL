@@ -7,6 +7,7 @@ auth.onAuthStateChanged(user => {
       for (let i in data) {
         let tableRow = $("<tr>");
         let tableData1 = $("<td>");
+        tableData1.attr("class", "td-1");
         let tableData2 = $("<td>");
         let tableData3 = $("<td>");
         let tinyURL = $("<a>");
