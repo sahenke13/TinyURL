@@ -77,7 +77,7 @@ app.get("/m/:id", (req, res) => {
   let data;
   console.log("tinyID is: ", tinyID);
   shortURLdb
-    .find({ shortURL: "https://muta13.herokuapp.com/" + tinyID })
+    .find({ shortURL: "https://muta13.herokuapp.com/m/" + tinyID })
     .then(data => {
       console.log("newData is: ", data[0].longURL);
       console.log("count: ", data[0].count);
@@ -87,7 +87,7 @@ app.get("/m/:id", (req, res) => {
 
       shortURLdb
         .findOneAndUpdate(
-          { shortURL: "https://muta13.herokuapp.com/" + tinyID },
+          { shortURL: "https://muta13.herokuapp.com/m/" + tinyID },
           { count: newCount }
         )
         .then(data => console.log("findOneAndUpdate: ", data));
