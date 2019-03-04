@@ -72,12 +72,12 @@ app.get("/m", (req, res) => {
 });
 
 //route to get specific URL, then needs to redirect
-app.get("/m/tiny/:id", (req, res) => {
+app.get("/m/:id", (req, res) => {
   let tinyID = req.params.id;
   let data;
   console.log("tinyID is: ", tinyID);
   shortURLdb
-    .find({ shortURL: "https://localhost:3000/m/tiny/" + tinyID })
+    .find({ shortURL: "http://localhost:3000/m/" + tinyID })
     .then(data => {
       console.log("newData is: ", data[0].longURL);
       console.log("count: ", data[0].count);
@@ -87,12 +87,12 @@ app.get("/m/tiny/:id", (req, res) => {
 
       shortURLdb
         .findOneAndUpdate(
-          { shortURL: "https://localhost:3000/m/tiny/" + tinyID },
+          { shortURL: "http://localhost:3000/m/" + tinyID },
           { count: newCount }
         )
         .then(data => console.log("findOneAndUpdate: ", data));
 
-      // res.redirect(data[0].longURL);
+      res.redirect(data[0].longURL);
     });
 });
 
@@ -103,7 +103,7 @@ app.post("/m", (req, res) => {
   let count = req.body.count;
   let shortId = shortid.generate();
   // let shortURL = "https://muta13.herokuapp.com/m/" + shortId;
-  let shortURL = "https://localhost:3000/m/tiny" + shortId;
+  let shortURL = "http://localhost:3000/m/" + shortId;
 
   console.log("user is in user post route: ", user);
   console.log("shortId");
