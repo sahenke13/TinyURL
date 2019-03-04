@@ -28,13 +28,13 @@ table {
   border-radius: 30px;
   border-style: hidden;
   position: relative;
-  position: 10px
+  position: 10px;
 }
 
 th {
   font-size: 15pt;
   padding-left: 20px;
-  padding-right: 10px:
+  padding-right: 10px;
   white-space: nowrap;
 }
 td {
