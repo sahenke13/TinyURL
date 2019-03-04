@@ -6,7 +6,7 @@ const shortid = require("shortid");
 //bring in shortURL db and User db and possible current User db
 const shortURLdb = require("./models/shortUrl");
 
-const PORT = process.env.port || 3000;
+const PORT = process.env.PORT || 3000;
 
 //create an instance of express
 const app = express();
