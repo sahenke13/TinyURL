@@ -78,7 +78,8 @@ $(document).on("click", "#signup", e => {
         window.location = "/login";
       })
       .catch(err => {
-        console.log(err);
+        alert("User name is already in use");
+        location.reload(true);
       });
   } else {
     alert(
