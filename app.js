@@ -102,7 +102,7 @@ app.post("/m", (req, res) => {
   let longURL = req.body.longURL;
   let count = req.body.count;
   let shortId = shortid.generate();
-  let shortURL = "http://localhost:3000/m/" + shortId;
+  let shortURL = "https://muta13.herokuapp.com/" + shortId;
 
   console.log("user is in user post route: ", user);
   console.log("shortId");
