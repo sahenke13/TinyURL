@@ -23,9 +23,7 @@ shortid.characters(
 // set view engine to ejs
 app.set("view engine", "ejs");
 
-//serve up static routes
-
-// app.use(express.urlencoded({ extended: true }));
+app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 //routes
@@ -93,7 +91,6 @@ app.get("/m/:id", (req, res) => {
           { count: newCount }
         )
         .then(data => console.log("findOneAndUpdate: ", data));
-
       res.redirect(data[0].longURL);
     });
 });

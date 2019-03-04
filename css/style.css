@@ -193,9 +193,6 @@ input {
   border: 1px solid rgb(2, 50, 76);
   height: 45px;
   color: rgb(2, 50, 76);
-
-  /* position: relative;
-  top: 100px; */
 }
 .signInContainer {
   width: 400px;

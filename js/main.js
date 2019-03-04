@@ -87,6 +87,7 @@ $(document).on("click", "#signup", e => {
     );
   }
 });
+
 // need to get signin information
 $(document).on("click", "#logIn", e => {
   e.preventDefault();
