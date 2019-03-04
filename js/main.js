@@ -70,16 +70,16 @@ $(document).on("click", "#signup", e => {
       .get(0)
       .checkValidity()
   ) {
-    auth.createUserWithEmailAndPassword(email, password).then(cred => {
-      if (err) {
-        alert("User is already registered");
+    auth
+      .createUserWithEmailAndPassword(email, password)
+      .then(cred => {
         console.log("cred.user is: ", cred.user);
-      }
-      console.log("cred.user is: ", cred.user);
-
-      auth.signOut();
-      window.location = "/login";
-    });
+        auth.signOut();
+        window.location = "/login";
+      })
+      .catch(err => {
+        console.log(err);
+      });
   } else {
     alert(
       "Please check that your email is valid and that your passwords match"
