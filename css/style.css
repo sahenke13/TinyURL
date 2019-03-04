@@ -23,12 +23,11 @@ a {
 table {
   /* border-collapse: collapse; */
   width: 1090px;
-  height: 105%;
+
   font-weight: bold;
   border-radius: 30px;
   border-style: hidden;
   position: relative;
-  right: 15px;
 }
 
 th {
@@ -37,7 +36,7 @@ th {
   white-space: nowrap;
 }
 td {
-  padding: 15px 0px 15px 25px;
+  padding: 15px 10px 15px 25px;
   overflow: hidden;
 }
 /* th */
