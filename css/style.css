@@ -1,186 +1,234 @@
 * {
-    box-sizing: border-box
+  box-sizing: border-box;
 }
 
 body {
-    font-family: arial;
-    margin: 0;
-    background: whitesmoke
+  font-family: arial;
+  margin: 0;
+  background: whitesmoke;
 }
 
 main,
 header {
-    max-width: 1080px;
-    margin: 30px auto;
-    padding: 0 10px;
-    color: #333;
+  max-width: 1080px;
+  margin: 30px auto;
+  padding: 0 10px;
+  color: #333;
 }
 
 a {
-    color: inherit
+  color: inherit;
 }
 
 table {
-    /* border-collapse: collapse; */
-    width: 100%;
+  /* border-collapse: collapse; */
+  width: 1090px;
+  height: 105%;
+  font-weight: bold;
+  border-radius: 30px;
+  border-style: hidden;
+  position: relative;
 
-    border-radius: 30px
+  right: 5px;
+}
+input {
+  color: rgb(2, 50, 76);
+  font-size: 30pt;
+  font-weight: bold;
 }
 
+th {
+  font-size: 15pt;
+  padding-left: 25px;
+}
+td {
+  padding: 15px 0px 15px 25px;
+}
+/* th */
 th,
 td {
-    border: .25px solid black;
-    border-radius: 5px;
-    padding: 15px;
+  border: 2px solid rgb(121, 147, 160);
+  border-radius: 5px;
 
+  color: rgb(2, 50, 76);
 }
 
 #signup {
-    position: relative;
-    top: 8px
+  position: relative;
+  top: 6px;
 }
 
 #signin {
-    position: relative;
-    top: 8px
+  position: relative;
+  top: 6px;
+  font-weight: 520;
+  font-size: 14pt;
 }
 
-
 #formDiv {
-    background: white;
-    position: relative;
-    top: 120px;
-    height: 175px;
+  background: white;
+  position: relative;
+  top: 120px;
+  height: 175px;
 }
 
 #submit {
-    background: rgb(238, 64, 53);
-    color: white;
-    position: relative;
-    top: -20px;
-    width: 200px;
+  background: rgb(238, 64, 53);
+  color: white;
+  position: relative;
+  top: -20px;
+  width: 200px;
 }
 
 #logIn {
-    position: relative;
-    top: 30px;
+  position: relative;
+  top: 30px;
 }
 
 #logSignUp {
-    position: relative;
-    top: 40px;
-    color: rgb(2, 50, 76);
+  position: relative;
+  top: 30px;
+  color: rgb(2, 50, 76);
+  font-size: 14pt;
+  font-weight: 525;
 }
 
 #longURL {
-    position: relative;
-    top: -25px
+  position: relative;
+  top: -30px;
+  color: rgb(2, 50, 76);
+  font-weight: 600;
+  font-size: 14pt;
+  padding-left: 20px;
 }
 
 #logout {
-    position: relative;
-    top: 30px;
-    cursor: pointer;
+  position: relative;
+  top: 20px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  color: rgb(2, 50, 76);
 }
 
+.urlfont {
+  font-size: 34pt;
+}
+
+.darkfont {
+  color: rgb(2, 50, 76);
+}
 .txtColor {
-    color: rgb(2, 50, 76);
-    font-weight: bold;
-    font-size: 16px;
+  color: rgb(2, 50, 76);
+  font-size: 13pt;
+  font-weight: bold;
 }
 
 .labelStyles {
-    color: rgb(2, 50, 76);
-    position: relative;
-    right: -12px;
-    /* font-weight: bold; */
-    font-size: 18px;
+  color: rgb(2, 50, 76);
+  position: relative;
+  right: -15px;
+  font-weight: 400;
+  font-size: 16pt;
 }
 
 .inputdivs {
-    width: 340px;
-    height: 45px;
-    color: rgb(2, 50, 76);
-    border: 1.5px solid rgb(121, 147, 160);
+  width: 340px;
+  height: 45px;
+  color: rgb(2, 50, 76);
+  border: 1.5px solid rgb(121, 147, 160);
 }
 
 .coloredBtn {
-    background: rgb(238, 64, 53);
-    color: white;
-    width: 340px;
+  background: rgb(238, 64, 53);
+  color: white;
+  width: 340px;
+  font-size: 18pt;
+  height: 50px;
 }
 
 .noColorBtn {
-    background: white;
-    color: rgb(2, 50, 76);
-    width: 340px;
+  background: white;
+  color: rgb(2, 50, 76);
+  width: 340px;
+  font-size: 30pt;
 }
 
 .btmButton {
-    position: relative;
-    bottom: -20px;
-    font-size: 1rem;
-    color: rgb(2, 50, 76);
-    font-weight: 1
+  position: relative;
+  bottom: -20px;
+  font-size: 1rem;
+  color: rgb(2, 50, 76);
 }
 
 .topButton {
-    position: relative;
-    bottom: -30px;
-    font-size: 1rem;
+  position: relative;
+  bottom: -30px;
+  font-size: 1rem;
 }
 
 .tinyFont {
-    font-size: 12px;
+  font-size: 12px;
 }
 
+.inputURL {
+  border: 1px solid rgb(2, 50, 76);
+  height: 45px;
+  color: rgb(2, 50, 76);
+
+  /* position: relative;
+  top: 100px; */
+}
 .signInContainer {
-    width: 400px;
-    margin: auto;
-    background: white;
-    color: rgb(2, 50, 76);
-    border: 1.5px solid rgb(121, 147, 160);
-    border-radius: 5px;
-    position: relative;
-    top: 90px;
-    height: 450px
+  width: 400px;
+  margin: auto;
+  background: white;
+  color: rgb(2, 50, 76);
+  border: 1.5px solid rgb(121, 147, 160);
+  border-radius: 5px;
+  position: relative;
+  top: 90px;
+  height: 450px;
 }
 
 .signUpContainer {
-    width: 400px;
-    margin: auto;
-    background: white;
-    border: 1.5px solid grey;
-    color: rgb(2, 50, 76);
-    border: 1.5px solid rgb(121, 147, 160);
-    border-radius: 5px;
-    position: relative;
-    top: 110px;
-    height: 550px
+  width: 400px;
+  margin: auto;
+  background: white;
+  border: 1.5px solid grey;
+  color: rgb(2, 50, 76);
+  border: 1.5px solid rgb(121, 147, 160);
+  border-radius: 5px;
+  position: relative;
+  top: 110px;
+  height: 550px;
 }
 
 .textSignIn {
-    position: relative;
-    top: 80px;
+  position: relative;
+  top: 80px;
 }
 
-
 .tableContainer {
-    overflow: hidden;
-    background: white;
-    position: relative;
-    top: 140px;
-    border: 1px solid black;
-    border-radius: 5px;
-
+  overflow: hidden;
+  background: white;
+  position: relative;
+  top: 140px;
+  border: 0.5px solid rgb(2, 50, 76);
+  border-radius: 5px;
+  width: 1080px;
 }
 
 .mainTableContainer {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .urlAndlogOut {
-    position: relative;
-    top: 55px;
+  position: relative;
+  top: 55px;
+}
+.urlFormContainer {
+  border: 1.5px solid rgb(121, 147, 160);
+  width: 1080px;
 }

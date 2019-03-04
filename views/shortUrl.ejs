@@ -9,7 +9,7 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
         crossorigin="anonymous">
-    <title>Make Urls Tiny Again</title>
+    <title>Tiny URL maker</title>
 </head>
 <link rel="stylesheet" type="text/css" media="screen" href="../css/style.css" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -28,22 +28,22 @@
     <main>
         <div class=" urlAndlogOut align-middle">
 
-            <h1 class="float-left">URLs </h1>
-            <div class="float-right align-middle" id="logout">Sign Out</div>
+            <h1 class="float-left urlfont darkfont">URLs </h1>
+            <div class="float-right align-middle darkfont logoutfont" id="logout">Sign Out</div>
         </div>
 
-        <div class="my-3 p-4 border border-secondary rounded" id="formDiv">
+        <div class="my-3 p-4  rounded urlFormContainer " id="formDiv">
             <form novalidate>
-                <div class="form-group">
+                <div class="form-group ">
                     <span>
-                        <input type="url" class="form-control border border-dark my-2" pattern="https://.*" placeholder="Enter Long URL"
+                        <input type="url" class="form-control inputURL" pattern="https://.*" placeholder="Enter Long URL"
                             name="longURL" id="longURL" required>
                     </span>
                 </div>
-                <button type="button" class="btn btn-lg my-2" id="submit">Create URL</button>
+                <button type="button" class="btn btn-lg  mb-3 darkfont" id="submit">Create URL</button>
             </form>
         </div>
-        <div class="mainTableContainer tableContainer">
+        <div class="mainTableContainer tableContainer ">
             <table id="dynamicTable">
                 <thead>
                     <tr>

@@ -25,6 +25,7 @@ auth.onAuthStateChanged(user => {
     });
   }
 
+  // click handler for longURL submit
   $(document).on("click", "#submit", () => {
     if (
       $("#longURL")
@@ -59,7 +60,6 @@ auth.onAuthStateChanged(user => {
 //On Click function for Signing Up a new User
 $(document).on("click", "#signup", e => {
   e.preventDefault();
-  console.log("something is happengin");
   let email = $("#userName").val();
   let password = $("#password").val();
   let confPassword = $("#confirmPassword").val();
@@ -86,10 +86,17 @@ $(document).on("click", "#logIn", e => {
   let email = $("#logInUser").val();
   let password = $("#logInPassword").val();
 
-  auth.signInWithEmailAndPassword(email, password).then(cred => {
-    console.log(cred.user);
-    window.location = "/shortUrl";
-  });
+  auth
+    .signInWithEmailAndPassword(email, password)
+    .then(cred => {
+      console.log(cred.user);
+      window.location = "/shortUrl";
+    })
+    .catch(() => {
+      alert("Validation Failed, please try again");
+      $("#logInUser").val("");
+      $("#logInPassword").val("");
+    });
 });
 
 $(document).on("click", "#logout", () => {

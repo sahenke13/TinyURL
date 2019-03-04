@@ -53,7 +53,7 @@ app.get("/shortUrl", (req, res) => {
   res.render("shortUrl");
 });
 
-// route to delete current user
+// route to find/get current user
 
 app.get("/m/user/:id", (req, res) => {
   console.log("route is being hit");
@@ -101,9 +101,11 @@ app.post("/m", (req, res) => {
   let user = req.body.user;
   let longURL = req.body.longURL;
   let count = req.body.count;
-  let shortURL = "http://localhost:3000/m/" + shortid.generate();
+  let shortId = shortid.generate();
+  let shortURL = "http://localhost:3000/m/" + shortId;
 
   console.log("user is in user post route: ", user);
+  console.log("shortId");
 
   //create dataObj to pass to Mongo
   let dataObj = {
