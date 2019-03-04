@@ -71,7 +71,12 @@ $(document).on("click", "#signup", e => {
       .checkValidity()
   ) {
     auth.createUserWithEmailAndPassword(email, password).then(cred => {
+      if (err) {
+        alert("User is already registered");
+        console.log("cred.user is: ", cred.user);
+      }
       console.log("cred.user is: ", cred.user);
+
       auth.signOut();
       window.location = "/login";
     });
