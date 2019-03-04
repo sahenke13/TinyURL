@@ -28,18 +28,13 @@ table {
   border-radius: 30px;
   border-style: hidden;
   position: relative;
-  /* table-layout: fixed; */
+  table-layout: fixed;
   right: 5px;
-}
-input {
-  color: rgb(2, 50, 76);
-  font-size: 30pt;
-  font-weight: bold;
 }
 
 th {
   font-size: 15pt;
-  padding-left: 25px;
+  padding-left: 20px;
   white-space: nowrap;
 }
 td {
@@ -53,6 +48,12 @@ td {
   border-radius: 5px;
 
   color: rgb(2, 50, 76);
+}
+
+input {
+  color: rgb(2, 50, 76);
+  font-size: 30pt;
+  font-weight: bold;
 }
 
 #signup {
